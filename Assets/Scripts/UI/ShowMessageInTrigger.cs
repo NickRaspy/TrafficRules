@@ -27,21 +27,21 @@ public class ShowMessageInTrigger : MonoBehaviour
     }
     protected virtual void MainMethod()
     {
-        di.tooltip.timerTooltipText = Text;
-        di.tooltip.ChangeImage(Image);
+        DI.instance.tooltip.timerTooltipText = Text;
+        DI.instance.tooltip.ChangeImage(Image);
         //включить табличку
-        di.tooltip.ShowTipWithTimer();
+        DI.instance.tooltip.ShowTipWithTimer();
 
-        di.tooltip.EndOfButtonHold += LoadMainMenu;
+        DI.instance.tooltip.EndOfButtonHold += LoadMainMenu;
 
         //отключить телепорт
-        di.rightTeleportController.SetActive(false);
-        di.leftTeleportController.SetActive(false);
+        DI.instance.rightTeleportController.SetActive(false);
+        DI.instance.leftTeleportController.SetActive(false);
     }
 
     protected void LoadMainMenu()
     {
-        di.tooltip.EndOfButtonHold -= LoadMainMenu;
-        SceneManager.LoadScene("MainMenu");
+        DI.instance.tooltip.EndOfButtonHold -= LoadMainMenu;
+        SceneManager.LoadScene(0);
     }
 }

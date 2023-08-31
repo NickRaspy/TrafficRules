@@ -11,6 +11,7 @@ TagManager:
   - Bicycle
   - CyclePoint
   - Tram
+  - Button
   layers:
   - Default
   - TransparentFX

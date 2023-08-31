@@ -14,7 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_LayerNames:
   - Default
-  - DefaultXR
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - car
   - 
   - 
   - 
@@ -39,9 +44,4 @@ MonoBehaviour:
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Teleport

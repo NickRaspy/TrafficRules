@@ -46,7 +46,7 @@ public class Tooltip : MonoBehaviour
 
     [SerializeField] private int time;
 
-    private void ChangeTooltipText(string value)
+    public void ChangeTooltipText(string value)
     {
         tooltipText.text = value;
     }
@@ -63,8 +63,8 @@ public class Tooltip : MonoBehaviour
         tipGameObject.SetActive(true);
         ChangeTooltipText(timerTooltipText);
         UpdateTimerText();
-        di.holdThreeSeconds.ReduceTime += ReduceTime;
-        di.holdThreeSeconds.ResetTime += ResetTime;
+        DI.instance.holdThreeSeconds.ReduceTime += ReduceTime;
+        DI.instance.holdThreeSeconds.ResetTime += ResetTime;
         stateTip = StateTip.TimerTip;
     }
     public void ShowSimpleTip()
@@ -162,8 +162,8 @@ public class Tooltip : MonoBehaviour
     private void OnDisable()
     {
         controllerTipButton.action.performed -= TipPress;
-        di.holdThreeSeconds.ReduceTime -= ReduceTime;
-        di.holdThreeSeconds.ResetTime -= ResetTime;
+        DI.instance.holdThreeSeconds.ReduceTime -= ReduceTime;
+        DI.instance.holdThreeSeconds.ResetTime -= ResetTime;
     }
     private void TipPress(InputAction.CallbackContext obj)
     {

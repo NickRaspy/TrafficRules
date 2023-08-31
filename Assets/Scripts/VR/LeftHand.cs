@@ -22,6 +22,6 @@ public class LeftHand : HandController
 
     private void MenuPress(InputAction.CallbackContext obj)
     {
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene(0);
     }
 }

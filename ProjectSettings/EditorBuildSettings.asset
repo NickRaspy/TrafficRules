@@ -8,9 +8,15 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: Assets/Scenes/MainMenu 3.unity
+    guid: 1b95431d854bfac4292039dfc6517163
+  - enabled: 0
+    path: Assets/Scenes/MainMenu 2.unity
+    guid: b34b7ecfb2f7cc94d807820a80f57be5
   - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
-    guid: b7bfd3d4ff79acd498d6be727fc894eb
+    path: Assets/Scenes/MainMenu 1.unity
+    guid: bec548fe1d127194f9fbe7e977a4e752
   - enabled: 1
     path: Assets/Scenes/Semaphore.unity
     guid: 10623cc0cabfca0498b151b0fa9ebd0a
@@ -24,29 +30,32 @@ EditorBuildSettings:
     path: Assets/Scenes/Error.unity
     guid: 4bc2f45d4d2271440a345c0d6b4d819a
   - enabled: 1
-    path: Assets/Scenes/Victorine4Class.unity
-    guid: 9d1eddc41c1433c42ab5a18c78f8a5a3
-  - enabled: 1
-    path: Assets/Scenes/Victorine5Class.unity
-    guid: ba8558063ec5043458d8e9a9a3240737
-  - enabled: 1
     path: Assets/Alex3D/Perekrestok.unity
     guid: 594a9fcf8f2a41b499705219523b2c58
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/InspectorDPS.unity
     guid: 7aa565a63df7f1b4c8cfd7f3f395a54b
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TramCastrat.unity
     guid: 3c9ae396f088c404f82a80663e2bf7c2
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TramInteractive.unity
     guid: 281b49190b6710e4e833dfdeabaa358c
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TramPerekrestok.unity
     guid: 7e24ae92a5e823a4496b6e7a5e96ebd5
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TramTrotuarInteractive.unity
     guid: e808177db708fef4da4b1508f31e6618
+  - enabled: 0
+    path: Assets/Scenes/Victorine4Class.unity
+    guid: 9d1eddc41c1433c42ab5a18c78f8a5a3
+  - enabled: 0
+    path: Assets/Scenes/Victorine5Class.unity
+    guid: ba8558063ec5043458d8e9a9a3240737
+  - enabled: 0
+    path: Assets/Scenes/MainMenu.unity
+    guid: 81b675a61f05fc040a2894a7483cc7b2
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 6802685daf2dde44ba84f8d126f90b35,
       type: 2}

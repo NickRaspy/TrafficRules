@@ -16,7 +16,8 @@ public static class MacChecker
     {
             "04-D9-F5-7C-5D-3D",
             "80-F3-EF-E6-59-8B",
-            "80-F3-EF-9C-A6-2E"
+            "80-F3-EF-9C-A6-2E",
+            "B4-17-A8-46-7C-E8"
     };
 
     public static string CurrentMacAdd()

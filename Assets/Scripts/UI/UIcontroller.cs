@@ -7,8 +7,7 @@ public class UIcontroller : MonoBehaviour
 {
     public void MoveToScene(string name)
     {
-        if(MacChecker.Drm())
-            SceneManager.LoadScene(name);
+        SceneManager.LoadScene(name);
     }
     // Start is called before the first frame update
     public void Exit()

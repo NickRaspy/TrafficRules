@@ -13,4 +13,8 @@ public class Win : ShowMessageInTrigger
 
         arrow?.SetActive(false);
     }
+    public void DoWin()
+    {
+        MainMethod();
+    }
 }

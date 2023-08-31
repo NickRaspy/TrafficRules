@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Victorine : MonoBehaviour
@@ -13,6 +14,7 @@ public class Victorine : MonoBehaviour
     public Question[] Questions;
 
     public int CurrentQuestion = 0;
+    public int RightAnsweredQuestions = 0;
 
     [SerializeField]private UnityEvent CompleteVictorine;
 
@@ -20,7 +22,8 @@ public class Victorine : MonoBehaviour
     [SerializeField]private Color redColor;
 
     private DI di;
-    private int CountAlreadyReplyAnswers = 0;
+    [SerializeField]private int CountAlreadyReplyAnswers = 0;
+    private bool isTheEnd = false;
 
     private void Start()
     {
@@ -52,6 +55,7 @@ public class Victorine : MonoBehaviour
         CountAlreadyReplyAnswers = 0;
 
         Questions[CurrentQuestion].Canvas.enabled = true;
+        if(CurrentQuestion != 0) Questions[CurrentQuestion-1].Canvas.enabled = false;
         Questions[CurrentQuestion].Time = 3;
         
     }
@@ -120,6 +124,7 @@ public class Victorine : MonoBehaviour
                 di.tooltip.ShowTip();*/
 
                 Questions[CurrentQuestion].AfterRightAnswer?.Invoke();
+                RightAnsweredQuestions++;
             }
             else
             {
@@ -156,8 +161,6 @@ public class Victorine : MonoBehaviour
         //сброс времени
         di.holdThreeSeconds.ResetTime -= Questions[CurrentQuestion].ResetTime;
 
-        CompleteVictorine?.Invoke();
-
         //если текущий канвас последний
         //то ничё не делаем
 
@@ -167,11 +170,18 @@ public class Victorine : MonoBehaviour
         CurrentQuestion++;
         if (CurrentQuestion < Questions.Length)
             Activate();
+        else CompleteVictorine?.Invoke();
     }
-
-    
-
-    
+    public void EndVictorine(GameObject endScreen)
+    {
+        Questions[CurrentQuestion - 1].Canvas.enabled = false;
+        endScreen.GetComponent<Canvas>().enabled = true;
+        endScreen.transform.Find("TextQuestion").GetComponent<Text>().text = $"Тест окончен.\r\nВаш счет: {RightAnsweredQuestions} из 10";
+    }
+    public void ExitVictorine()
+    {
+        SceneManager.LoadScene(0);
+    }
 }
 
 [System.Serializable]

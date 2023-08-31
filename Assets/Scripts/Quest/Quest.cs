@@ -25,7 +25,7 @@ public class Quest : MonoBehaviour
     
     //______________________system variables
     //сюда помещаем диктора из шага
-    private AudioSource auDictor;
+    [SerializeField]private AudioSource auDictor;
     IEnumerator waitSpeachDictor;
     Action playstep;
     public int testStep;
@@ -93,7 +93,7 @@ public class Quest : MonoBehaviour
         } 
     }
 
-    private void NextStep()
+    public void NextStep()
     {
         if (steps.Length > 0)
         {
@@ -129,7 +129,7 @@ public class Quest : MonoBehaviour
                         StopCoroutine(waitSpeachDictor);
                         waitSpeachDictor = null;
                         auDictor.Stop();
-                        auDictor.clip = null;
+                        //auDictor.clip = null;
                     }
                     waitSpeachDictor = WaitSpeachDictor();
                     StartCoroutine(waitSpeachDictor);
@@ -248,11 +248,11 @@ public class Step
         }
 
         //если подсказка не как предыдущая
-        if (!likePrevious)
+/*        if (!likePrevious)
         {
             //заменить подсказку
             DI.instance.tooltip.simpleTooltipText = tipText;
-        }
+        }*/
 
         //если подсказка обязательна
         if (forcedShowToolTip)
