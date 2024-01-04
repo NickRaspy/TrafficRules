@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 2036752328}
-  m_IndirectSpecularColor: {r: 0.356605, g: 0.4572178, b: 0.5338848, a: 1}
+  m_IndirectSpecularColor: {r: 0.0015703904, g: 0.0029176553, b: 0.006694109, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000000, guid: 91b25b2af08001040bb3ba14552a9d17,
+  m_LightingDataAsset: {fileID: 112000004, guid: 143f2fa76f7edb1419e456f02121dbed,
     type: 2}
   m_LightingSettings: {fileID: 4890085278179872738, guid: ebe6c263c4bc0554d80856fe0bcaf861,
     type: 2}
@@ -40098,6 +40098,31 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 8395840634710971503, guid: a2fe83e629e9d9846995a720276d0838,
+        type: 3}
+      propertyPath: m_ReceiveGI
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8395840634710971503, guid: a2fe83e629e9d9846995a720276d0838,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8395840634710971503, guid: a2fe83e629e9d9846995a720276d0838,
+        type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8395840634710971503, guid: a2fe83e629e9d9846995a720276d0838,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8395840634710971503, guid: a2fe83e629e9d9846995a720276d0838,
+        type: 3}
+      propertyPath: m_StitchLightmapSeams
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2fe83e629e9d9846995a720276d0838, type: 3}
 --- !u!1001 &1293217184
@@ -60998,6 +61023,31 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 2677658482827434895, guid: 72dc4884b7a245c4899b79856d1d5422,
+        type: 3}
+      propertyPath: m_ReceiveGI
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677658482827434895, guid: 72dc4884b7a245c4899b79856d1d5422,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677658482827434895, guid: 72dc4884b7a245c4899b79856d1d5422,
+        type: 3}
+      propertyPath: m_RenderingLayerMask
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677658482827434895, guid: 72dc4884b7a245c4899b79856d1d5422,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677658482827434895, guid: 72dc4884b7a245c4899b79856d1d5422,
+        type: 3}
+      propertyPath: m_StitchLightmapSeams
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 72dc4884b7a245c4899b79856d1d5422, type: 3}
 --- !u!1001 &2031017841
@@ -61192,7 +61242,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2036752327
 MonoBehaviour:
   m_ObjectHideFlags: 0

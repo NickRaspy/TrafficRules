@@ -215,7 +215,11 @@ public class Step
     [SerializeField] private bool likePrevious = true;
     [Tooltip("Текстовая подсказка")]
     [SerializeField] private string tipText;
-
+    [Space]
+    [Tooltip("Если вместо диктора текстовое окно с заданиями")]
+    [SerializeField] private bool taskWindowsInteadOfDictor;
+    [Tooltip("Текст в окне с заданиями")]
+    [SerializeField] private string taskText;
     [Space]
     [Tooltip("Объекты, которые должны быть выполнеными для продолжения сценария")]
     public List<Interactive> shouldBeCompleted;
@@ -260,7 +264,12 @@ public class Step
             //показать подсказку
             DI.instance.tooltip.ShowSimpleTip();
         }
-
+        if (taskWindowsInteadOfDictor)
+        {
+            DI.instance.tasksWindow.SetText(taskText);
+            if(clickToNextStep) DI.instance.tasksWindow.closeText.enabled = true;
+            else DI.instance.tasksWindow.closeText.enabled = false;
+        }
         
         if(shouldBeCompleted.Count>0)
         {

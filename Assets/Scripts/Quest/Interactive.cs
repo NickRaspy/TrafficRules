@@ -17,8 +17,7 @@ public class Interactive : MonoBehaviour
         set
         {
             isCompleted = value;
-            if(isCompleted)
-                CompleteAction?.Invoke();
+            if (isCompleted) CompleteAction?.Invoke();
         }
     }
     

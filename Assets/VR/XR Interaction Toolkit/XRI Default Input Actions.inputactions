@@ -898,6 +898,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "GrabItem",
+                    "type": "Button",
+                    "id": "09835736-ab02-4c52-8787-a4196248dad2",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -1085,6 +1094,17 @@
                     "processors": "",
                     "groups": "Generic XR Controller",
                     "action": "NextStep",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "142a72d9-e9cc-44f4-8c33-f9f4d9ece357",
+                    "path": "<OculusTouchController>/gripPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Generic XR Controller",
+                    "action": "GrabItem",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

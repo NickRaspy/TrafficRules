@@ -4,23 +4,19 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - People
-  - Car
   - PeopleSemaphore
   - Zone
-  - Bicycle
-  - CyclePoint
   - Tram
-  - Button
+  - People
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Zone
+  - 
   - Water
   - UI
-  - car
-  - 
+  - People
+  - Other Object
   - 
   - 
   - 

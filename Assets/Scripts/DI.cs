@@ -22,6 +22,7 @@ public class DI : MonoBehaviour
     public GameObject player;
     public Win win;
     public Tooltip tooltip;
+    public TasksWindow tasksWindow;
     public HoldThreeSeconds holdThreeSeconds;
     public AudioSource dieSound;
     public GameObject rightTeleportController;
